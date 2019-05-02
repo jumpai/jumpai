@@ -66,7 +66,7 @@
                         <a class="dropdown-item">0000000504</a>
                         <a class="dropdown-item">0000000505</a>
                         <a class="dropdown-item">0000000511</a>
-                        <a class="dropdown-item">0000001000</a>
+                        <a id="default_customer" class="dropdown-item">0000001000</a>
                         <a class="dropdown-item">0000001001</a>
                         <a class="dropdown-item">0000001002</a>
                         <a class="dropdown-item">0000001012</a>
@@ -85,7 +85,7 @@
                     the tutorial video on how to build a pipeline and deploy as REST API.
                 </p>
                 <p class="lead">
-                    To start, select a customer id in the dropdown.
+                    Try changing the custimer id in the dropdown above.
                 </p>
             </div>
         </div>
@@ -161,6 +161,8 @@
                 slultra(url, "", content, action, action_fail);
 
             });
+
+            $("#default_customer").trigger("mouseup");
         });
     </script>
 
