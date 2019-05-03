@@ -95,7 +95,7 @@
         <div class="row">
             <div class="col-md-12">
                 <!-- Input and output textareas -->
-                <table id="sales_orders-table" class="table table-striped table-bordered nowrap"></table>
+                <table id="sales_orders-table" class="table table-striped table-bordered nowrap" style="width: 100%"></table>
             </div>
         </div>
     </div>
@@ -112,7 +112,6 @@
                 var customer_id = e.target.innerText;
                 var content = { "customer_id": customer_id };
                 $("#customer_id-dropdown").text(customer_id);
-                $("#outputTextArea").text("Waiting for result from SnapLogic.")
 
                 // SnapLogic Ultra Task
                 var url = "https://demo-fm.snaplogic.io/api/1/rest/feed-master/queue/ConnectFasterInc/Jump/SAP%20Demo/Get%20Sales%20Orders%20of%20Customer%20Task";
@@ -141,6 +140,7 @@
 
                         if (table != null) {
                             table.destroy();
+                            document.getElementById("sales_orders-table").innerHTML = "";
                         }
 
                         table = $("#sales_orders-table").DataTable({
