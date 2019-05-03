@@ -6,3 +6,5 @@
 embedded, or in a hybrid environment 
 ## Demo
 [Make SAP a REST API](https://jumpai.github.io/SnapLogic/SAP/GetSalesOrderOfCustomer.html)
+
+[Oracle DB Basic Analytics](https://jumpai.github.io/SnapLogic/Oracle/Analytics.html)
