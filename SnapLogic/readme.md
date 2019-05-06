@@ -5,6 +5,12 @@
 3. Anywhere – on-premises, in the cloud,
 embedded, or in a hybrid environment 
 ## Demo
+[SnapLogic Machine Learning Showcase](https://www.snaplogic.com/machine-learning-showcase)
+
+[Customer Churn Prediction](https://www.snaplogic.com/machine-learning-showcase/customer-churn-prediction)
+
+[Faster and Better Loan Approval](https://www.snaplogic.com/machine-learning-showcase/loan-repayment-prediction)
+
 [Make SAP a REST API](https://jumpai.github.io/SnapLogic/SAP/GetSalesOrderOfCustomer.html)
 
 [Oracle DB Basic Analytics](https://jumpai.github.io/SnapLogic/Oracle/Analytics.html)
