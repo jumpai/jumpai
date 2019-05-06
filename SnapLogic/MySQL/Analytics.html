@@ -343,12 +343,6 @@
                         columns.push({ "title": header[i] });
                     }
 
-                    // Clear table.
-                    if (table != null) {
-                        table.destroy();
-                        $("#main-table").html("");
-                    }
-
                     table = $("#main-table").DataTable({
                         data: data,
                         columns: columns,

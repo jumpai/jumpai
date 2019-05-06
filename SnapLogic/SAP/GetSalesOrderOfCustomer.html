@@ -143,12 +143,6 @@
                             data.push(data_point);
                         }
 
-                        // Clear table.
-                        if (table != null) {
-                            table.destroy();
-                            $("#sales_orders-table").html("");
-                        }
-
                         table = $("#sales_orders-table").DataTable({
                             data: data,
                             columns: columns,
