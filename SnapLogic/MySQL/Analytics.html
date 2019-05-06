@@ -343,6 +343,12 @@
                         columns.push({ "title": header[i] });
                     }
 
+                    // Clear table.
+                    if (table != null) {
+                        table.destroy();
+                        $("#main-table").html("");
+                    }
+
                     table = $("#main-table").DataTable({
                         data: data,
                         columns: columns,
@@ -354,10 +360,12 @@
 
             };
 
+            // Clear table.
             if (table != null) {
                 table.destroy();
-                document.getElementById("main-table").innerHTML = "";
+                $("#main-table").html("");
             }
+
             $("#profile-button").hide();
 
             slultra(url, "", content, action, action_fail, { "table_name": table_name });

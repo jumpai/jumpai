@@ -126,7 +126,7 @@
 
         var table = null;
         var profile_html = "";
-        var url = "https://demo-fm.snaplogic.io/api/1/rest/feed-master/queue/ConnectFasterInc/Jump/Oracle%20Demo/Main%20API%20Task";
+        var url = "https://demo-fm.snaplogic.io/api/1/rest/feed-master/queue/ConnectFasterInc/Jump/Oracle%20Demo/Oracle%20-%20Main%20API%20Task";
 
         var action_fail = function (responseJson) {
             alert("Please check your internet connection and try again.");
@@ -221,6 +221,12 @@
                         columns.push({ "title": header[i] });
                     }
 
+                    // Clear table.
+                    if (table != null) {
+                        table.destroy();
+                        $("#main-table").html("");
+                    }
+
                     table = $("#main-table").DataTable({
                         data: data,
                         columns: columns,
@@ -232,10 +238,12 @@
 
             };
 
+            // Clear table.
             if (table != null) {
                 table.destroy();
-                document.getElementById("main-table").innerHTML = "";
+                $("#main-table").html("");
             }
+
             $("#profile-button").hide();
 
             slultra(url, "", content, action, action_fail, { "table_name": table_name });

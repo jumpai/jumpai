@@ -143,9 +143,10 @@
                             data.push(data_point);
                         }
 
+                        // Clear table.
                         if (table != null) {
                             table.destroy();
-                            document.getElementById("sales_orders-table").innerHTML = "";
+                            $("#sales_orders-table").html("");
                         }
 
                         table = $("#sales_orders-table").DataTable({
@@ -160,6 +161,12 @@
                 // Handle failure.
                 var action_fail = function (responseJson) {
                     alert("Please check your internet connection and try again.");
+                }
+
+                // Clear table.
+                if (table != null) {
+                    table.destroy();
+                    $("#sales_orders-table").html("");
                 }
 
                 // Send request to SnapLogic.
