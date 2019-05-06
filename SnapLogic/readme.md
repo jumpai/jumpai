@@ -18,3 +18,5 @@ embedded, or in a hybrid environment
 [MySQL DB Basic Analytics](https://jumpai.github.io/SnapLogic/MySQL/Analytics.html)
 
 [LINE Chatbot](https://jumpai.github.io/SnapLogic/LINE/Chatbot.html)
+
+[Twitter Sentiment Visualizer](https://jumpai.github.io/SnapLogic/Social/TwitterSentimentVisualizer.html)
